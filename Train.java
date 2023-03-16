@@ -93,13 +93,13 @@ public class Train {
         if (!this.wagons.contains(wagon)) {
             throw new RuntimeException("Wagon not in train");
         }
-        if(this.wagons.size() == 1){
+        if (this.wagons.size() == 1) {
             throw new RuntimeException("Cannot remove last wagon");
         }
 
         // set next wagon of wagon before removed wagon
         // if wagon is first wagon in train, set next wagon of first wagon to null
-        if(this.wagons.indexOf(wagon) > 0){
+        if (this.wagons.indexOf(wagon) > 0) {
             this.wagons.get(this.wagons.indexOf(wagon) - 1).setNextWagon(this.wagons.get(this.wagons.indexOf(wagon) + 1));
         } else {
             this.wagons.get(0).setNextWagon(null);

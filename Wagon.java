@@ -99,6 +99,7 @@ public class Wagon {
     public Wagon getNextWagon() {
         return this.nextWagon;
     }
+
     public Train getTrain() {
         return this.train;
     }

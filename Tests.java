@@ -101,7 +101,7 @@ public class Tests {
      * Test if we can remove locomotives and wagons from a train correctly
      */
     @Test
-    public void removeWagonLocomotive(){
+    public void removeWagonLocomotive() {
         Train train = new Train(l1);
         train.addWagon(w1);
         train.addWagon(w2);
